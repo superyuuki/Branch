@@ -21,26 +21,29 @@
 
 public class ExecutionTest {
 
-    /*private final static Logger logger = LoggerFactory.getLogger(ExecutionTest.class);
+    private final static Logger logger = LoggerFactory.getLogger(ExecutionTest.class);
 
     private final StringManager manager = new StringManager();
     private final NodeSource<String> source = manager.getSource();
 
-    public void test1() {
+    @Test 
+    public void testSingleNodes_shouldActAsCommands() {
+
+        int i = 0;
 
         manager.newCommandWithBuilder()
                 .withNode(source.single()
                         .withHandler(context -> {
-
+                            
                         }).build()
                 ).finish();
 
         manager.newCommandWithNode(SingleNode.of("hi", act -> {
 
-        },EmptyPermission.instance(), new StringDescription("cum")));
+        },EmptyPermission.instance(), new StringDescription("does something that will make you single")));
 
         //oh my god i can't believe singlenode is actually working
 
-    }*/
+    }
 
 }
